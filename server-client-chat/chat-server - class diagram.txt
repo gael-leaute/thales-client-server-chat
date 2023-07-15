@@ -1,0 +1,13 @@
+classDiagram
+    Server <|-- chat-server
+    class Server{
+        +bind()
+        +async_run()
+    }
+    class chat-server{
+        +unordered_map<rpc::session_id_t, std::pair<string,bool>> client_data
+        +exit_client()
+        +announce()
+        +broadcast()
+        +msg_handler()
+    }
