@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81584231-332A-31F3-863B-BB75EC300EED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>rpc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\rpclib\rpclib\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rpc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\rpclib\rpclib\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rpc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\rpclib\rpclib\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rpc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\rpclib\rpclib\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rpc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Projects/rpclib/rpclib/dependencies/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Projects/rpclib/rpclib/dependencies/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Projects/rpclib/rpclib/dependencies/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Projects/rpclib/rpclib/dependencies/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0501;_GNU_SOURCE;ASIO_HAS_STD_ADDRESSOF;ASIO_HAS_STD_ARRAY;ASIO_HAS_CSTDINT;ASIO_HAS_STD_SHARED_PTR;ASIO_HAS_STD_TYPE_TRAITS;ASIO_STANDALONE;RPCLIB_ASIO=clmdep_asio;RPCLIB_FMT=clmdep_fmt;RPCLIB_WIN32;RPCLIB_MSGPACK=clmdep_msgpack;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\rpclib\rpclib\include;C:\Projects\rpclib\rpclib\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\rpclib\rpclib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Projects/rpclib/rpclib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/rpclib/rpclib -BC:/Projects/rpclib/rpclib/build --check-stamp-file C:/Projects/rpclib/rpclib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Projects\rpclib\rpclib\cmake\check_warning_flag.cmake;C:\Projects\rpclib\rpclib\cmake\coverage.cmake;C:\Projects\rpclib\rpclib\cmake\msvc_support.cmake;C:\Projects\rpclib\rpclib\cmake\policies.cmake;C:\Projects\rpclib\rpclib\cmake\rpclibConfig.cmake.in;C:\Projects\rpclib\rpclib\doc\pages\versions.md.in;C:\Projects\rpclib\rpclib\include\rpc\config.h.in;C:\Projects\rpclib\rpclib\include\rpc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\rpclib\rpclib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Projects/rpclib/rpclib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/rpclib/rpclib -BC:/Projects/rpclib/rpclib/build --check-stamp-file C:/Projects/rpclib/rpclib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Projects\rpclib\rpclib\cmake\check_warning_flag.cmake;C:\Projects\rpclib\rpclib\cmake\coverage.cmake;C:\Projects\rpclib\rpclib\cmake\msvc_support.cmake;C:\Projects\rpclib\rpclib\cmake\policies.cmake;C:\Projects\rpclib\rpclib\cmake\rpclibConfig.cmake.in;C:\Projects\rpclib\rpclib\doc\pages\versions.md.in;C:\Projects\rpclib\rpclib\include\rpc\config.h.in;C:\Projects\rpclib\rpclib\include\rpc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Projects\rpclib\rpclib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Projects/rpclib/rpclib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/rpclib/rpclib -BC:/Projects/rpclib/rpclib/build --check-stamp-file C:/Projects/rpclib/rpclib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Projects\rpclib\rpclib\cmake\check_warning_flag.cmake;C:\Projects\rpclib\rpclib\cmake\coverage.cmake;C:\Projects\rpclib\rpclib\cmake\msvc_support.cmake;C:\Projects\rpclib\rpclib\cmake\policies.cmake;C:\Projects\rpclib\rpclib\cmake\rpclibConfig.cmake.in;C:\Projects\rpclib\rpclib\doc\pages\versions.md.in;C:\Projects\rpclib\rpclib\include\rpc\config.h.in;C:\Projects\rpclib\rpclib\include\rpc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Projects\rpclib\rpclib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Projects/rpclib/rpclib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/rpclib/rpclib -BC:/Projects/rpclib/rpclib/build --check-stamp-file C:/Projects/rpclib/rpclib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeCXXCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeRCCompiler.cmake;C:\Projects\rpclib\rpclib\build\CMakeFiles\3.27.0-rc4\CMakeSystem.cmake;C:\Projects\rpclib\rpclib\cmake\check_warning_flag.cmake;C:\Projects\rpclib\rpclib\cmake\coverage.cmake;C:\Projects\rpclib\rpclib\cmake\msvc_support.cmake;C:\Projects\rpclib\rpclib\cmake\policies.cmake;C:\Projects\rpclib\rpclib\cmake\rpclibConfig.cmake.in;C:\Projects\rpclib\rpclib\doc\pages\versions.md.in;C:\Projects\rpclib\rpclib\include\rpc\config.h.in;C:\Projects\rpclib\rpclib\include\rpc\version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Projects\rpclib\rpclib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\dispatcher.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\server.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\client.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\this_handler.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\this_session.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\this_server.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\rpc_error.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\detail\server_session.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\detail\response.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\detail\client_error.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\lib\rpc\nonstd\optional.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\dependencies\src\format.cc" />
+    <ClCompile Include="C:\Projects\rpclib\rpclib\dependencies\src\posix.cc" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\dependencies\include\format.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\dependencies\include\gmock\gmock.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\dependencies\include\gtest\gtest.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\dependencies\include\posix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\client.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\compatibility.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\config.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\all.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\any.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\async_writer.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\bool.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\call.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\client_error.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\constant.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\dev_utils.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\func_tools.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\func_traits.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\if.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\invoke.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\is_specialization_of.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\log.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\make_unique.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\not.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\pimpl.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\response.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\server_session.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\thread_group.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\detail\util.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\dispatcher.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\fbuffer.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\gcc_atomic.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\object.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\pack.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\pack_define.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\pack_template.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\alpha.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\arm.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\blackfin.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\convex.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\ia64.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\m68k.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\mips.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\parisc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\ppc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\pyramid.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\rs6k.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\sparc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\superh.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\sys370.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\sys390.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\x86.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\x86\32.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\x86\64.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\architecture\z.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\borland.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\clang.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\comeau.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\compaq.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\diab.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\digitalmars.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\dignus.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\edg.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\ekopath.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\gcc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\gcc_xml.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\greenhills.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\hp_acc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\iar.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\ibm.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\intel.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\kai.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\llvm.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\metaware.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\metrowerks.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\microtec.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\mpw.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\palm.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\pgi.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\sgi_mipspro.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\sunpro.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\tendra.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\visualc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\compiler\watcom.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\_cassert.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\_exception.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\comp_detected.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\endian_compat.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\os_detected.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\platform_detected.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\test.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\detail\test_def.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\arm.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\arm\versions.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\ppc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\ppc\versions.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\x86.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\x86\versions.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\x86_amd.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\hardware\simd\x86_amd\versions.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\language.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\language\objc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\language\stdc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\language\stdcpp.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c\_prefix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c\gnu.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c\uc.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c\vms.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\c\zos.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\_prefix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\cxx.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\dinkumware.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\libcomo.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\modena.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\msl.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\roguewave.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\sgi.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\stdcpp3.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\stlport.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\library\std\vacpp.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\make.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\aix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\amigaos.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\android.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\beos.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd\bsdi.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd\dragonfly.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd\free.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd\net.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\bsd\open.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\cygwin.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\haiku.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\hpux.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\ios.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\irix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\linux.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\macos.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\os400.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\qnxnto.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\solaris.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\unix.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\vms.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\os\windows.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\other.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\other\endian.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform\mingw.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform\windows_desktop.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform\windows_phone.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform\windows_runtime.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\platform\windows_store.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\version.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\predef\version_number.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\sbuffer.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\sysdep.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\unpack.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\unpack_define.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\unpack_template.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\util.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\version.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\version_master.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\vrefbuffer.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\zbuffer.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\msgpack\zone.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\rpc_error.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\server.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\this_handler.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\this_server.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\this_session.h" />
+    <ClInclude Include="C:\Projects\rpclib\rpclib\include\rpc\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\rpclib\rpclib\build\ZERO_CHECK.vcxproj">
+      <Project>{D36CC472-E984-3702-8EA5-8506F922F0ED}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

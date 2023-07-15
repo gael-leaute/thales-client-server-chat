@@ -1,0 +1,12 @@
+sequenceDiagram
+    box Send-Receive
+    participant Client
+    participant Server
+    end
+    Client->>+Server: announce()
+    Client->>+Server: msg_callback()
+    loop always
+        Client-->Client: getLine()
+    end
+    Client->>+Server: broadcast()
+    Client->>+Server: exit()

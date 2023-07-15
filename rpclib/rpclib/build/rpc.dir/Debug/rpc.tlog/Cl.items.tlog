@@ -1,0 +1,13 @@
+C:\Projects\rpclib\rpclib\lib\rpc\dispatcher.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\dispatcher.obj
+C:\Projects\rpclib\rpclib\lib\rpc\server.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\server.obj
+C:\Projects\rpclib\rpclib\lib\rpc\client.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\client.obj
+C:\Projects\rpclib\rpclib\lib\rpc\this_handler.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\this_handler.obj
+C:\Projects\rpclib\rpclib\lib\rpc\this_session.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\this_session.obj
+C:\Projects\rpclib\rpclib\lib\rpc\this_server.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\this_server.obj
+C:\Projects\rpclib\rpclib\lib\rpc\rpc_error.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\rpc_error.obj
+C:\Projects\rpclib\rpclib\lib\rpc\detail\server_session.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\server_session.obj
+C:\Projects\rpclib\rpclib\lib\rpc\detail\response.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\response.obj
+C:\Projects\rpclib\rpclib\lib\rpc\detail\client_error.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\client_error.obj
+C:\Projects\rpclib\rpclib\lib\rpc\nonstd\optional.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\optional.obj
+C:\Projects\rpclib\rpclib\dependencies\src\format.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\format.obj
+C:\Projects\rpclib\rpclib\dependencies\src\posix.cc;C:\Projects\rpclib\rpclib\build\rpc.dir\Debug\posix.obj

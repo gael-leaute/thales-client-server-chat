@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\rpclib\rpclib\build\CMakeFiles\a316fffccdddce0a4689691f8b3facfd\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\rpclib\rpclib\cmake\check_warning_flag.cmake">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\cmake\coverage.cmake">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\cmake\msvc_support.cmake">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\cmake\policies.cmake">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\cmake\rpclibConfig.cmake.in">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\doc\pages\versions.md.in">
+      <Filter>Buildsystem Input Files\doc\pages</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\include\rpc\config.h.in">
+      <Filter>Buildsystem Input Files\include\rpc</Filter>
+    </None>
+    <None Include="C:\Projects\rpclib\rpclib\include\rpc\version.h.in">
+      <Filter>Buildsystem Input Files\include\rpc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CC72B176-0046-3EA5-8DBC-744049FB32F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EFB6FB7A-A3BC-36E7-956B-9290DCEF821B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\cmake">
+      <UniqueIdentifier>{D3582E21-527D-362A-8E4B-3EBE49481332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\doc\pages">
+      <UniqueIdentifier>{D4D68311-05F3-3DCC-8331-EFB172D66206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\include\rpc">
+      <UniqueIdentifier>{5F6A663F-F234-3B34-A399-49D33D5B3C49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

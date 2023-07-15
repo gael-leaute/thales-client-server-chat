@@ -1,0 +1,13 @@
+classDiagram
+    Client <|-- Service
+    class Client{
+        +call()
+        +async_call()
+    }
+    class Service{
+        +string message
+        +get_status()
+        +submit()
+        +new_message()
+        +message_sent()
+    }

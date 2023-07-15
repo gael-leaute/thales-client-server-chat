@@ -1,0 +1,18 @@
+sequenceDiagram
+    box chat-client
+    participant User Interface
+    participant task_receive
+    participant Service
+    
+    participant task_send
+    end
+    task_receive->>+Server-Client: client.call("announce")
+    User Interface->>+Service: service.submit()
+    task_send->>+Service: service.new_message()
+    task_send->>+Server-Client: client.async_call("broadcast")
+    task_send->>+Service: service.message_sent()
+    task_receive->>+Server-Client: client.async_call("msg_callback")
+    task_receive->>+User Interface: cout()
+    User Interface->>+Service: service.submit("exit")
+    task_send->>+Service: service.get_status()
+    task_send->>+Server-Client: client.call("exit")
